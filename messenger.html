@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Эврика - Мессенджер</title>
+    <link rel="stylesheet" href="css/styles_messenger.css">
+</head>
+	<div id="header">Мессенджер
+		<h1>
+			<a href="index.html">
+				<img id="logo_left_corner" src="images/Лого.png" alt="Лого" class="page-image">	
+			</a>	
+		</h1>
+		<button id="orderButton" class="mainbutton"><span>Тех.поддержка</span></button>
+	</div>
+	<div id="left">Разделы сайта
+		<nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="courses.html">Мои курсы</a></li>
+                <li><a href="plan.html">Учебный план</a></li>
+                <li><a href="messenger.html">Мессенджер</a></li>
+                <li><a href="profile.html">Личный кабинет</a></li>
+            </ul>
+        </nav>
+	</div> 
+	<div id="content">
+		<div>
+			<button class="message">
+				<img class="ava_of_prepod" src="images/Ласкавая.jpg" alt="Описание изображения">
+				<b>Ласкавая Елена Валентиновна</b>
+			</button>
+		</div>
+		<div>
+			<button class="message">
+				<img class="ava_of_prepod" src="images/Кашапов.jpg" alt="Описание изображения">
+				<b>Кашапов Александр Сергеевич</b>
+			</button>
+		</div>
+		<div>	
+			<button class="message">
+				<img class="ava_of_prepod" src="images/Митюкова.jpg" alt="Описание изображения">
+				<b>Митюкова Марина Леонидовна</b>
+			</button>
+		</div>
+	</div>
+	<div id="footer">2024 Эврика. Все права защищены.</div>
+	<div id="modal" class="modal2">
+			<div class="modal2_body">
+				<form name="form1" method="post" action="a.php">
+				<p>Имя: <input type="text" id="name" name="name" required></p>
+				<p>Ваш Email: <input type="text" id="email" name="email" required></p>
+				<p>Сообщение <textarea id="message" name="message" rows="5" required></textarea></p>
+				<p><button type="submit">Отправить</button></p>
+				</form>
+				<?php include "aa.php";?>
+			</div>
+	</div>
+	
+	<script>
+    document.getElementById("orderButton").addEventListener("click", function() {
+      document.getElementById("modal").style.display = "block";
+    });
+	</script>
+</body>
+</html>

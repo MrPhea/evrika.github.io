@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Эврика - Главная</title>
+    <link rel="stylesheet" href="css/styles_index.css">
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<script src = "app.js"></script>
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+</head>
+	<div id="header">Открой мир новых знаний с Эврикой!
+		<h1>
+			<img id="logo_left_corner" src="images/Лого.png" alt="Описание изображения для главной страницы" class="page-image">	
+		</h1>
+		<button id="orderButton" class="mainbutton"><span>Тех.поддержка</span></button>
+	</div>
+	<div id="left">Разделы сайта
+		<nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="courses.html">Мои курсы</a></li>
+                <li><a href="plan.html">Учебный план</a></li>
+                <li><a href="messenger.html">Мессенджер</a></li>
+                <li><a href="profile.html">Личный кабинет</a></li>
+            </ul>
+        </nav>
+	</div> 
+	<div id="content">
+		<div id="glav_obiysn"> 
+		<p>Как это работает?</p>
+			<ul>
+				<li><p>Ты покупаешь курс на стороннем ресурсе.</p></li>
+				<li><p>После оплаты ты получаешь от них ссылку на доступ к платформе "Эврика".</p></li>
+				<li><p>Перейдя по ссылке, ты попадаешь в свой личный кабинет, где доступны все твои курсы.</p></li>
+			</ul>
+		</div>
+		<div id="glav_preim"> 
+		<p>Преимущества Эврики:</p>
+			<ul>
+				<li><p><b>Удобный доступ:</b> Все твои курсы в одном месте.</p></li>
+				<li><p><b>Комфортная среда обучения:</b> Наслаждайся просмотром курсов в удобное для тебя время.</p></li>
+				<li><p><b>Без лишних сложностей:</b> Никакой регистрации, никаких дополнительных аккаунтов.</p></li>
+			</ul>
+		</div>
+	</div>
+	<div id="footer">2024 Эврика. Все права защищены.</div>
+	<div id="modal" class="modal2">
+			<div class="modal2_body">
+				<form name="form1" method="post" action="a.php">
+				<p>Имя: <input type="text" id="name" name="name" required></p>
+				<p>Ваш Email: <input type="text" id="email" name="email" required></p>
+				<p>Сообщение <textarea id="message" name="message" rows="5" required></textarea></p>
+				<p><button type="submit">Отправить</button></p>
+				</form>
+				<?php include "aa.php";?>
+			</div>
+	</div>
+	
+	<script>
+    document.getElementById("orderButton").addEventListener("click", function() {
+      document.getElementById("modal").style.display = "block";
+    });
+	</script>
+</body>
+</html>
