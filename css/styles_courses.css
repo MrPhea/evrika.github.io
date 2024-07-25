@@ -1,0 +1,256 @@
+#header {
+  font-size: 36px;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding-top: 60px;
+  text-align: center;
+  width:1465px;
+  height:85px;
+  background-color: #24257D;
+}
+
+#header nav ul {
+    list-style-type: none #ff0000;
+}
+
+#left {  
+  padding-top: 8px;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  width:200px;
+  height:611px;
+  float:left;
+  background-color: #523E64;
+}
+
+#content { 
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  height:619px;
+  width:1465px;
+  background-color: #93748C;
+}
+
+#footer {  
+  padding-top: 15px;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  width:1465px;
+  height:45px;
+  background-color: #24257D;
+}
+
+#left nav ul {
+  float: left;
+  list-style: none;
+}
+
+#left nav ul li {
+    margin: 5px 0;
+  text-align: left;
+}
+
+#left nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    background-color: #E35973;
+    border-radius: 5px;
+    display: block;
+}
+
+#logo_left_corner {
+    position: absolute;
+  top: 5px;
+  left: 20px;
+}
+
+#course-1 {
+  box-shadow: 7px 7px 10px #24257D;
+  background-color: #2F2F9B;
+  color: white;
+  text-align: left;
+  width: 1000px;
+  height: 155px;
+  padding: 0;
+  padding-left: 15px;
+  border-radius: 10px;
+  position: absolute;
+  top: 180px;
+  left: 230px
+}
+
+#course-1 h1 {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+#course-1 button {
+  background-color: #E35973;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px; 
+  align-items: center;
+  display: block;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+#course-1 button:hover {
+  background-color: #8fcef2;
+}
+
+#course-1 button:active {
+  background-color: #84bfe0;
+  transform: translateY(2px);
+}
+
+#course-1 p{
+  margin-left: 10px;
+}
+
+#course-2 {
+  box-shadow: 7px 7px 10px #24257D;
+  background-color: #2F2F9B;
+  color: white;
+  text-align: left;
+  width: 1000px;
+  height: 155px;
+  padding: 0;
+  padding-left: 15px;
+  border-radius: 10px;
+  position: absolute;
+  top: 365px;
+  left: 230px
+}
+
+#course-2 h1 {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+#course-2 button {
+  background-color: #E35973;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+#course-2 button:hover {
+  background-color: #8fcef2;
+}
+
+#course-2 button:active {
+  background-color: #84bfe0;
+  transform: translateY(2px);
+}
+
+#course-2 p{
+  margin-left: 10px;
+}
+
+#course-3 {
+  box-shadow: 7px 7px 10px #24257D;
+  background-color: #2F2F9B;
+  color: white;
+  text-align: left;
+  width: 1000px;
+  height: 155px;
+  padding: 0;
+  padding-left: 15px;
+  border-radius: 10px;
+  position: absolute;
+  top: 550px;
+  left: 230px
+}
+
+#course-3 h1 {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+#course-3 button {
+  background-color: #E35973;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;     
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+#course-3 button:hover {
+  background-color: #8fcef2;
+}
+
+#course-3 button:active {
+  background-color: #84bfe0; 
+  transform: translateY(2px);
+}
+
+#course-3 p{
+  margin-left: 10px;
+}
+
+button.mainbutton {
+    position: absolute;
+    width: 130px;
+    height: 28px;
+    right: 20px;
+    top: 35px;
+    background: #f0f0f0;
+    border-radius: 40px;
+    padding: 22px 0 33px;
+    font-family: Montserrat-Black;
+}
+
+.modal2 {
+    display: none;
+}
+
+.modal2_overlay {
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.modal2_body {
+    width: 400px;
+    height: 400px;
+    position: fixed;
+    left: 50%;
+    top: 40%;
+    background: #fff;
+    margin-left: -200px;
+    margin-top: -150px;
+    border-radius: 10px;
+    box-shadow: 0 0 50px black;
+    padding: 20px;
+}
